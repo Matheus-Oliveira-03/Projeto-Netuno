@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 
+/* ==problemas para resolver ==*/
+/* 
+>divisão entre o cabeçalho e a primeira seção
+>risaca branca à direita do aside
+>Bordinhas do aside
+*/
 *{
     padding: 0;
     margin: 0;
@@ -14,6 +20,7 @@
 main {
     background-color: #1A7FBD;
     display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -91,19 +98,21 @@ body {
 
 #initialSection > img{
     width: 100%;
+    position: relative;
+    right: 17%;
 }
 
 #initialSection > aside{
     position: absolute;
-    right: 9em;
-    top: 12em;
-    width: 30vw;
+    right: 10%;
+    top: 30%;
+    width: 370px;
     box-sizing: border-box;
 }
 
 #initialSection form {
     background-color: #fff;
-    border-radius: 2%;
+    border-radius: 0.7em;
 }
 
 fieldset {
@@ -181,20 +190,20 @@ fieldset {
 }
 
 #programingKnowledge {
-    column-gap: 30px;
+    column-gap: 4%;
     row-gap: 14px;
     font-size: 12px;
     color: white;
 }
 
-#programingKnowledge input{
+.checkConteiner input{
     display: none;
 }
 
-#programingKnowledge input + label::before {
+.checkConteiner input + label::before {
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     border-radius: 23%;
     border: #fff solid 1px;
     display: inline-block;
@@ -203,20 +212,115 @@ fieldset {
     box-sizing: border-box;
 }
 
-#programingKnowledge input:checked + label::before {
+#workQuestion input + label::before {
+    border-color: #1A7FBD;
+}
+
+.checkConteiner input:checked + label::before {
     padding: 2px;
     background-color: #fff;
     background-clip: content-box;
+}
+
+#workQuestion input:checked + label::before {
+    background-color: #1A7FBD;
 }
 
 #workQuestionConteiner{
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 20px;
 }
 
+#workQuestion {
+    margin-bottom: 15px;
+}
 #workQuestion legend{
     font-size: 14px;
     color: #1A7FBD;
+    font-weight: 550;
+}
+
+#workQuestion div {
+    margin-right: 20px;
+    color: #00000055;
+}
+
+#workQuestionConteiner button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #1A7FBD;
+    line-height: 45px;
+    width: 96%;
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+}
+
+#requiredReminder {
+    border-top: #00000033 solid 1px;
+    font-weight: bold;
+    font-size: 9px;
+    text-align: center;
+    color: #1A7FBD;
+    width: 96%;
+    margin: 0 auto 25px;
+    padding-top: 10px;
+}
+
+#privacyReminder {
+    color: #00000055;
+    font-size: 9px;
+    font-weight: 600;
+    text-align: center;
+    width: 75%;
+    margin: 15px auto 15px;
+}
+
+#privacyReminder a{
+    color: #1A7FBD;
+}
+
+/*=====The project=====*/
+
+#theProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theProject img{
+    width: 33em;
+    background: radial-gradient(#A4DCFF, #1A7FBD 16em);
+}
+
+#theProject div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25em;
+    margin-left: 40px;
+}
+
+#theProject div > h2 {
+    color: #A4DCFF;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#theProject div p{
+    color: #fff;
+}
+
+.weakerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.strongerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 600;
 }
