@@ -25,7 +25,7 @@ body {
 #navigationMenu {
     background-color: #1A7FBD;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     height: 85px;
@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    margin: 0 4em;
 }
 
 #navigationMenu ul li {
@@ -95,7 +95,7 @@ body {
 
 #initialSection > aside{
     position: absolute;
-    right: 7em;
+    right: 9em;
     top: 12em;
     width: 30vw;
     box-sizing: border-box;
@@ -142,6 +142,13 @@ fieldset {
 #yourData input{
     border: none;
     flex-grow: 1;
+    width: 100%;
+}
+
+#yourData select{
+    border: none;
+    flex-grow: 1;
+    width: 100%;
 }
 
 #yourData {
@@ -188,11 +195,11 @@ fieldset {
     content: '';
     width: 15px;
     height: 15px;
-    border-radius: 25%;
+    border-radius: 23%;
     border: #fff solid 1px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 9px;
     box-sizing: border-box;
 }
 
@@ -200,4 +207,16 @@ fieldset {
     padding: 2px;
     background-color: #fff;
     background-clip: content-box;
+}
+
+#workQuestionConteiner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+#workQuestion legend{
+    font-size: 14px;
+    color: #1A7FBD;
 }

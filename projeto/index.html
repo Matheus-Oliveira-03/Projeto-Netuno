@@ -42,8 +42,53 @@
                             </div>
                             <div>
                                 <label for="state"><img src="../Assets_Netuno/icones/state.png" alt="Ícone de estado"></label>
-                                <input type="text" id="state" placeholder="Estado*">
+                                <select>
+                                    <option>Estado*</option>
+
+                                    <optgroup label="Região Norte">
+                                        <option>Acre</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Tocantins</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option>Distrito Federal</option>
+                                        <option>Goiás</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Nordeste">
+                                        <option>Alagoas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Maranhão</option>
+                                        <option>Piauí</option>
+                                        <option>Pernambuco</option>
+                                        <option>Paraíba</option>
+                                        <option>Rio Grande do Norte</option>
+                                        <option>Sergipe</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Sul">
+                                        <option>Paraná</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Santa Catarina</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Sudeste">
+                                        <option>Espírito Santo</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>São Paulo</option>
+                                    </optgroup>
+                                </select>
                             </div> 
+
+                            
                         </fieldset>
                     </div>
                     
@@ -103,16 +148,22 @@
                         </fieldset>
                     </div>
                     
+                    <div id="workQuestionConteiner">
+                        <fieldset id="workQuestion">
+                            <legend>Já trabalhou com desenvolvimento?</legend>
 
-                    <fieldset id="workQuestion">
-                        <legend>Já trabalhou desenvolvimento?</legend>
+                            <div>
+                                <input type="checkbox" id="*não" checked>
+                                <label for="*não">Não</label>
 
-                        <input type="checkbox" id="*não" checked>
-                        <label for="*não">Não</label>
+                                <input type="checkbox" id="*sim">
+                                <label for="*sim">Sim</label>
+                            </div>
+                        </fieldset>
 
-                        <input type="checkbox" id="*sim">
-                        <label for="*sim">Sim</label>
-                    </fieldset>
+                        <button type="submit">Enviar</button>
+                    </div>
+                    
                 </form>
             </aside>
         </section>
