@@ -1,13 +1,39 @@
 /*=====General=====*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /* ==problemas para resolver ==*/
 /* 
 >divisão entre o cabeçalho e a primeira seção
 >risaca branca à direita do aside
 >Bordinhas do aside
+>sombra do aside
+>divisão entre a primeira seção e o primeiro artigo
+>sombra das caixas do "problema"
+>responsividade
+>risquinhas que ficam na lateral das seções
+>as marcas mais claras dentro da imagem do "projeto
+>os números atrás dos titulos do aside de jornada
+>bacgroud do "objetivos"
+>'paceholder' do "estado" na seção inicial
 */
+
+.selectiveProcessButton {
+    background-color: #000;
+    border-radius: 8px;
+    width: 155px;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.selectiveProcessButton a {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0 2em 1.3em #00000022;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -59,14 +85,6 @@ body {
     border-radius: 8px;
 }
 
-#navigationMenu button {
-    background-color: #000;
-    border-radius: 8px;
-    width: 164px;
-    line-height: 40px;
-    font-size: 15px;
-}
-
 #navigationMenu a{
     color: #fff;
 }
@@ -89,6 +107,13 @@ body {
     height: 0.05em;
 }
 
+fieldset {
+    padding: 20px;
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+}
+
 /*=====Initial Section=====*/
 
 #initialSection {
@@ -97,13 +122,14 @@ body {
 } 
 
 #initialSection > img{
-    width: 100%;
+    width: 100em;
     position: relative;
-    right: 17%;
+    right: 269.8px;
 }
 
 #initialSection > aside{
     position: absolute;
+    border-radius: 0.7em;
     right: 10%;
     top: 30%;
     width: 370px;
@@ -113,13 +139,6 @@ body {
 #initialSection form {
     background-color: #fff;
     border-radius: 0.7em;
-}
-
-fieldset {
-    padding: 20px;
-    display: flex;
-    border: none;
-    flex-wrap: wrap;
 }
 
 /*
@@ -288,6 +307,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #A4DCFF;
 }
 
 #theProject img{
@@ -295,18 +315,17 @@ fieldset {
     background: radial-gradient(#A4DCFF, #1A7FBD 16em);
 }
 
-#theProject div{
+.textBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25em;
+    width: 24em;
     margin-left: 40px;
 }
 
-#theProject div > h2 {
-    color: #A4DCFF;
-    font-size: 32px;
-    font-weight: 500;
+.articleTitle {
+    font-size: 34px;
+    font-weight: 600;
 }
 
 #theProject div p{
@@ -323,4 +342,267 @@ fieldset {
     font-size: 14px;
     margin: 10px 0;
     font-weight: 600;
+}
+
+/*=====O Problema=====*/
+
+#theProblem {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#theProblem > div > h2 {
+    color: #1A7FBD;
+}
+
+#problemExposition {
+    font-size: 17.5px;
+    font-weight: 600;
+    padding: 20px 0 25px;
+    border-bottom: #00000033 solid 1px;
+}
+
+#theProblem img{
+    width: 28em;
+}
+
+/*
+.gradientTitle {
+    background-image: linear-gradient(90deg, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+*/
+
+#theProblem aside {
+    display: flex;
+    position: absolute;
+    width: 56em;
+    bottom: -160px;
+    gap: 8px;
+    border-radius: 10px;
+}
+
+#theProblem aside > div {
+    width: 33%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: #00000011 solid 0.5px;
+}
+
+#theProblem aside > div > h3 {
+    text-align: center;
+    font-size: 24px;
+    height: 33%;
+}
+
+#theProblem aside > div > p{
+    text-align: center;
+}
+
+/*=====Sua jornada=====*/
+
+#yourJorney {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#yourJorneyTitle {
+    margin: 18em auto 50px;
+    color: #1A7FBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#yourJorneyTitle .articleTitle {
+    text-align: center;
+    margin: 0 20px;
+}
+
+#yourJorneyTitle > img:first-child {
+    transform: rotate(180deg);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 72px 72px;
+    width: 70%;
+    gap: 10px;
+}
+
+.table > div {
+    background-color: #1A7FBD;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px #0002;
+}
+
+.table > div > div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 13px;
+}
+
+.table > div > div > img {
+    width: 27px;
+}
+
+.table > div > p {
+    color: #fff;
+    margin: 0 0 0 15px;
+    width: 220,1;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#yourJorney > button {
+    background-color: #000;
+    border-radius: 10px;
+    height: 65px;
+    padding: 20px;
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: 120px 0 20px 0;
+}
+
+#yourJorney > button > p {
+    font-size: 16px;
+}
+
+#yourJorney > button > p > a {
+    color: #1A7FBD;
+}
+
+#yourJorney > button > img {
+    height: 22px;
+}
+
+#yourJorney > img {
+    margin: 0 0 130px 0;
+}
+
+/*=====Objectives=====*/
+
+#objectives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#objectives h2 {
+    color: #fff;
+    margin: 55px 0 45px 0;
+}
+
+#objectives section {
+    display: flex;
+    width: 70%;
+    height: 205px;
+    gap: 10px;
+    margin: 0 0 120px 0;
+}
+
+#objectives section > div {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 33%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#objectives section > div > h3 {
+    font-size: 26px;
+    margin: 10px 0 0 0;
+}
+
+/*=====footer=====*/
+
+#mainFooter {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 60px;
+}
+
+#mainFooter a {
+    color: #fff;
+    display: block;
+}
+
+#mainFooter > div {
+    margin: 0 40px 0 0;
+}
+
+#mainFooter > div > div {
+    display: flex;
+}
+
+#mainFooter > div > div > a > img {
+    width: 15px;
+    margin: 12px 20px 12px 0;
+}
+
+#mainFooter > div > p {
+    font-size: 8px;
+    color: #fff9;
+}
+
+#mainFooter button {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+#mainFooter button > a {
+    color: #000;
+    font-weight: bold;
+}
+
+#mainFooter nav {
+    border-right: #fff7 solid 1px;
+    height: 7em;
+    padding: 0 60px 0 0;
+}
+
+#mainFooter nav > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#mainFooter aside {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 7em;
 }
