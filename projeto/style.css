@@ -4,19 +4,41 @@
 
 /* ==problemas para resolver ==*/
 /* 
->divisão entre o cabeçalho e a primeira seção
+>divisão entre o cabeçalho e a primeira seção (Feito) 
 >risaca branca à direita do aside
 >Bordinhas do aside
->sombra do aside
+>sombra do aside (Feito)
 >divisão entre a primeira seção e o primeiro artigo
 >sombra das caixas do "problema"
->responsividade
 >risquinhas que ficam na lateral das seções
 >as marcas mais claras dentro da imagem do "projeto
 >os números atrás dos titulos do aside de jornada
 >bacgroud do "objetivos"
 >'paceholder' do "estado" na seção inicial
+>responsividade
 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'noto Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24em;
+    margin-left: 40px;
+}
+
+.articleTitle {
+    font-size: 34px;
+    font-weight: 600;
+}
 
 .selectiveProcessButton {
     background-color: #000;
@@ -34,13 +56,16 @@
     box-shadow: 0 2em 1.3em #00000022;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'noto Sans', sans-serif;
-    text-decoration: none;
-    list-style-type: none;
+.weakerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.strongerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 600;
 }
 
 main {
@@ -53,22 +78,30 @@ body {
     background-color: #1A7FBD;
 }
 
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    padding: 20px;
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+}
+
 /*=====Header=====*/
 
 #navigationMenu {
     background-color: #1A7FBD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     height: 85px;
     width: 100%;
 }
 
 #navigationMenu ul {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0 4em;
 }
 
@@ -78,12 +111,14 @@ body {
     border-radius: 8px;
 }
 
+ /*
 #navigationMenu ul li:hover {
     border: #fff solid 1px;
     padding: 0 9px;
     line-height: 39px;
     border-radius: 8px;
 }
+*/
 
 #navigationMenu a{
     color: #fff;
@@ -94,24 +129,14 @@ body {
 }
 
 #mainHeader {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #mainHeader::after {
     content: '';
-    background-color: #fff;
-    width: 100%;
-    height: 0.05em;
-}
-
-fieldset {
-    padding: 20px;
-    display: flex;
-    border: none;
-    flex-wrap: wrap;
+    background: linear-gradient(90deg, #1a7fbd00, #fff, #1a7fbd00);
+    width: 90%;
+    height: 1px;
 }
 
 /*=====Initial Section=====*/
@@ -133,7 +158,6 @@ fieldset {
     right: 10%;
     top: 30%;
     width: 370px;
-    box-sizing: border-box;
 }
 
 #initialSection form {
@@ -190,16 +214,13 @@ fieldset {
     width: 100%;
     margin-top: 10px;
     padding: 20px 14px;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     border: #00000033 solid 1px;
     border-radius: 6px;
 }
 
 #yourData div img{
     width: 45%;
-    align-self: center;
     margin-right: 4px;
 }
 
@@ -304,9 +325,6 @@ fieldset {
 /*=====The project=====*/
 
 #theProject {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #A4DCFF;
 }
 
@@ -315,41 +333,14 @@ fieldset {
     background: radial-gradient(#A4DCFF, #1A7FBD 16em);
 }
 
-.textBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 24em;
-    margin-left: 40px;
-}
-
-.articleTitle {
-    font-size: 34px;
-    font-weight: 600;
-}
-
 #theProject div p{
     color: #fff;
-}
-
-.weakerText {
-    font-size: 14px;
-    margin: 10px 0;
-    font-weight: 100;
-}
-
-.strongerText {
-    font-size: 14px;
-    margin: 10px 0;
-    font-weight: 600;
 }
 
 /*=====O Problema=====*/
 
 #theProblem {
     background-color: #fff;
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
@@ -410,17 +401,12 @@ fieldset {
 
 #yourJorney {
     background-color: #fff;
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #yourJorneyTitle {
     margin: 18em auto 50px;
     color: #1A7FBD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -456,9 +442,6 @@ fieldset {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     padding: 13px;
 }
@@ -481,8 +464,6 @@ fieldset {
     height: 65px;
     padding: 20px;
     width: 31%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     color: #fff;
     margin: 120px 0 20px 0;
@@ -507,9 +488,7 @@ fieldset {
 /*=====Objectives=====*/
 
 #objectives {
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #objectives h2 {
@@ -520,7 +499,7 @@ fieldset {
 #objectives section {
     display: flex;
     width: 70%;
-    height: 205px;
+    height: 43.5%;
     gap: 10px;
     margin: 0 0 120px 0;
 }
@@ -530,10 +509,9 @@ fieldset {
     border-radius: 10px;
     width: 33%;
     padding: 20px 40px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    justify-content: flex-start;
 }
 
 #objectives section > div > h3 {
@@ -544,11 +522,8 @@ fieldset {
 /*=====footer=====*/
 
 #mainFooter {
-    display: flex;
     background-color: #000;
     color: #fff;
-    justify-content: center;
-    align-items: center;
     padding: 80px;
     gap: 60px;
 }
