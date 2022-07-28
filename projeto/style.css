@@ -5,15 +5,14 @@
 /* ==problemas para resolver ==*/
 /* 
 >divisão entre o cabeçalho e a primeira seção (Feito) 
->risaca branca à direita do aside
->Bordinhas do aside
+>risaca branca à direita do aside (Não consegui)
+>Bordinhas do aside (Não consegui)
 >sombra do aside (Feito)
->divisão entre a primeira seção e o primeiro artigo
->sombra das caixas do "problema"
->risquinhas que ficam na lateral das seções
->as marcas mais claras dentro da imagem do "projeto
->os números atrás dos titulos do aside de jornada
->bacgroud do "objetivos"
+>divisão entre a primeira seção e o primeiro artigo (Feito)
+>sombra das caixas do "problema" (Feito)
+>risquinhas que ficam na lateral das seções (Não consegui)
+>as marcas mais claras dentro do "projeto" e do "objetivo" (Mais ou menos)
+>os números atrás dos titulos do aside de "jornada" 
 >'paceholder' do "estado" na seção inicial
 >responsividade
 */
@@ -143,6 +142,7 @@ fieldset {
 
 #initialSection {
     display: flex;
+    justify-content: flex-end;
     overflow: hidden;
     background-image: url(/Assets_Netuno/bannertopo.png);
     height: 58.9em;
@@ -154,17 +154,31 @@ fieldset {
     position: relative;
 } 
 
-#initialSection > aside{
-    position: absolute;
+#initialSection aside{
+    position: relative;
     border-radius: 0.7em;
-    right: 10%;
-    top: 10%;
+    margin: 8% 11% 0 0;
+    height: 715px;
     width: 370px;
 }
+
+ /*
+#initialSection aside::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(#fff, #A4DCFF, #fff);
+}
+*/
 
 #initialSection form {
     background-color: #fff;
     border-radius: 0.7em;
+    height: 100%;
 }
 
 /*
@@ -328,9 +342,12 @@ fieldset {
 
 #theProject {
     color: #A4DCFF;
+    padding-bottom: 5em;
+    background-size: 50em;
 }
 
 #theProject img{
+    width: 30em;
     width: 33em;
     background: radial-gradient(#A4DCFF, #1A7FBD 16em);
 }
@@ -491,6 +508,7 @@ fieldset {
 
 #objectives {
     flex-direction: column;
+    background: radial-gradient(#A4DCFF, #1A7FBD);
 }
 
 #objectives h2 {
