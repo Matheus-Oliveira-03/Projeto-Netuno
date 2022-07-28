@@ -144,19 +144,21 @@ fieldset {
 #initialSection {
     display: flex;
     overflow: hidden;
-} 
-
-#initialSection > img{
-    width: 100em;
+    background-image: url(/Assets_Netuno/bannertopo.png);
+    height: 58.9em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center center;
+    background-position-x: -13.5em;
     position: relative;
-    right: 269.8px;
-}
+} 
 
 #initialSection > aside{
     position: absolute;
     border-radius: 0.7em;
     right: 10%;
-    top: 30%;
+    top: 10%;
     width: 370px;
 }
 
