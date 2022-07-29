@@ -12,7 +12,7 @@
 >sombra das caixas do "problema" (Feito)
 >risquinhas que ficam na lateral das seções (Não consegui)
 >as marcas mais claras dentro do "projeto" e do "objetivo" (Mais ou menos)
->os números atrás dos titulos do aside de "jornada" 
+>os números atrás dos titulos do aside de "jornada" (Não consegui)
 >'paceholder' do "estado" na seção inicial
 >responsividade
 */
@@ -45,6 +45,7 @@
     width: 155px;
     line-height: 40px;
     font-size: 15px;
+    border: none;
 }
 
 .selectiveProcessButton a {
@@ -81,6 +82,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 fieldset {
@@ -95,7 +97,7 @@ fieldset {
 #navigationMenu {
     background-color: #1A7FBD;
     padding: 20px;
-    height: 85px;
+    height: 2.23%;
     width: 100%;
 }
 
@@ -144,7 +146,7 @@ fieldset {
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    background-image: url(/Assets_Netuno/bannertopo.png);
+    background-image: url(../Assets_Netuno/bannertopo.png);
     height: 58.9em;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -231,6 +233,7 @@ fieldset {
     margin-top: 10px;
     padding: 20px 14px;
     justify-content: space-around;
+    flex-wrap: nowrap;
     border: #00000033 solid 1px;
     border-radius: 6px;
 }
@@ -387,19 +390,19 @@ fieldset {
 */
 
 #theProblem aside {
-    display: flex;
     position: absolute;
-    width: 56em;
-    bottom: -160px;
-    gap: 8px;
+    width: 66.4%;
+    height: 34.76%;
+    bottom: -25.28%;
+    gap: 1%;
     border-radius: 10px;
 }
 
 #theProblem aside > div {
-    width: 33%;
+    width: 30%;
     background-color: #fff;
     border-radius: 10px;
-    height: 220px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -408,12 +411,14 @@ fieldset {
 
 #theProblem aside > div > h3 {
     text-align: center;
+    width: 100%;
     font-size: 24px;
     height: 33%;
 }
 
 #theProblem aside > div > p{
     text-align: center;
+    width: 100%;
 }
 
 /*=====Sua jornada=====*/
@@ -424,14 +429,18 @@ fieldset {
 }
 
 #yourJorneyTitle {
-    margin: 18em auto 50px;
+    margin: 21.35% auto 3.71%;
     color: #1A7FBD;
     width: 100%;
 }
 
 #yourJorneyTitle .articleTitle {
     text-align: center;
-    margin: 0 20px;
+    margin: 0 1.5%;
+}
+
+#yourJorneyTitle img {
+    width: 27.5%;
 }
 
 #yourJorneyTitle > img:first-child {
@@ -441,8 +450,9 @@ fieldset {
 .table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 72px 72px;
+    grid-template-rows: 1fr 1fr;
     width: 70%;
+    height: 17.1%;
     gap: 10px;
 }
 
@@ -461,7 +471,6 @@ fieldset {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    box-sizing: border-box;
     padding: 13px;
 }
 
@@ -472,7 +481,6 @@ fieldset {
 .table > div > p {
     color: #fff;
     margin: 0 0 0 15px;
-    width: 220,1;
     font-size: 15px;
     font-weight: 100;
 }
@@ -480,10 +488,12 @@ fieldset {
 #yourJorney > button {
     background-color: #000;
     border-radius: 10px;
-    height: 65px;
+    height: 7.23%;
     padding: 20px;
     width: 31%;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 2.38%;
+    border: none;
     color: #fff;
     margin: 120px 0 20px 0;
 }
@@ -501,7 +511,7 @@ fieldset {
 }
 
 #yourJorney > img {
-    margin: 0 0 130px 0;
+    margin: 0 0 9.64% 0;
 }
 
 /*=====Objectives=====*/
@@ -537,6 +547,7 @@ fieldset {
 #objectives section > div > h3 {
     font-size: 26px;
     margin: 10px 0 0 0;
+    width: 100%;
 }
 
 /*=====footer=====*/
@@ -544,8 +555,8 @@ fieldset {
 #mainFooter {
     background-color: #000;
     color: #fff;
-    padding: 80px;
-    gap: 60px;
+    padding: 6.7%;
+    gap: 5%;
 }
 
 #mainFooter a {
@@ -584,7 +595,7 @@ fieldset {
 #mainFooter nav {
     border-right: #fff7 solid 1px;
     height: 7em;
-    padding: 0 60px 0 0;
+    padding: 0 5% 0 0;
 }
 
 #mainFooter nav > ul {
