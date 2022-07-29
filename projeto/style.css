@@ -24,6 +24,7 @@
     font-family: 'noto Sans', sans-serif;
     text-decoration: none;
     list-style-type: none;
+    font-size: 16px;
 }
 
 .textBox{
@@ -147,7 +148,7 @@ fieldset {
     justify-content: flex-end;
     overflow: hidden;
     background-image: url(../Assets_Netuno/bannertopo.png);
-    height: 58.9em;
+    height: 950px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -160,7 +161,7 @@ fieldset {
     position: relative;
     border-radius: 0.7em;
     margin: 8% 11% 0 0;
-    height: 715px;
+    height: 80%;
     width: 370px;
 }
 
@@ -320,7 +321,7 @@ fieldset {
 #requiredReminder {
     border-top: #00000033 solid 1px;
     font-weight: bold;
-    font-size: 9px;
+    font-size: 8px;
     text-align: center;
     color: #1A7FBD;
     width: 96%;
@@ -330,15 +331,16 @@ fieldset {
 
 #privacyReminder {
     color: #00000055;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 600;
     text-align: center;
     width: 75%;
-    margin: 15px auto 15px;
+    margin: 5px auto 15px;
 }
 
 #privacyReminder a{
     color: #1A7FBD;
+    font-size: 8px;
 }
 
 /*=====The project=====*/
@@ -362,8 +364,14 @@ fieldset {
 /*=====O Problema=====*/
 
 #theProblem {
+    flex-wrap: wrap-reverse;
     background-color: #fff;
     position: relative;
+    align-items: flex-end;
+}
+
+#theProblem > div {
+    margin: 10% 5% 5%;
 }
 
 #theProblem > div > h2 {
@@ -391,9 +399,10 @@ fieldset {
 
 #theProblem aside {
     position: absolute;
-    width: 66.4%;
-    height: 34.76%;
-    bottom: -25.28%;
+    flex-wrap: wrap;
+    width: 896px;
+    height: 220px;
+    bottom: -120px;
     gap: 1%;
     border-radius: 10px;
 }
@@ -429,7 +438,7 @@ fieldset {
 }
 
 #yourJorneyTitle {
-    margin: 21.35% auto 3.71%;
+    margin: 220px auto 3.71%;
     color: #1A7FBD;
     width: 100%;
 }
