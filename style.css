@@ -2,21 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-/* ==problemas para resolver ==*/
-/* 
->divisão entre o cabeçalho e a primeira seção (Feito) 
->risaca branca à direita do aside (Não consegui)
->Bordinhas do aside (Não consegui)
->sombra do aside (Feito)
->divisão entre a primeira seção e o primeiro artigo (Feito)
->sombra das caixas do "problema" (Feito)
->risquinhas que ficam na lateral das seções (Não consegui)
->as marcas mais claras dentro do "projeto" e do "objetivo" (Mais ou menos)
->os números atrás dos titulos do aside de "jornada" (Não consegui)
->'paceholder' do "estado" na seção inicial
->responsividade
-*/
-
 *{
     padding: 0;
     margin: 0;
@@ -147,7 +132,7 @@ fieldset {
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    background-image: url(../Assets_Netuno/bannertopo.png);
+    background-image: url(Assets_Netuno/bannertopo.png);
     height: 950px;
     background-size: 100%;
     background-repeat: no-repeat;
